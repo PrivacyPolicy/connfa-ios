@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.lemberg.drupalcon</string>
+	<string>com.hutchison.gabriel.drupalcon</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -22,15 +22,6 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>41</string>
-	<key>GoogleAnalytics</key>
-	<dict>
-		<key>GoogleAnalyticsID</key>
-		<string>UA-267362-67</string>
-		<key>DryRun</key>
-		<false/>
-		<key>DispatchInterval</key>
-		<integer>50</integer>
-	</dict>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -45,8 +36,22 @@
 			</dict>
 		</array>
 	</dict>
+	<key>GoogleAnalytics</key>
+	<dict>
+		<key>DispatchInterval</key>
+		<integer>50</integer>
+		<key>DryRun</key>
+		<false/>
+		<key>GoogleAnalyticsID</key>
+		<string>UA-98109598-1</string>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -60,10 +65,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 </dict>
 </plist>

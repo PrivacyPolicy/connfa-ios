@@ -313,7 +313,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5DC8C411198656DA00BF5816 /* DrupalCon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrupalCon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DC8C411198656DA00BF5816 /* fcp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fcp3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC8C414198656DA00BF5816 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5DC8C416198656DA00BF5816 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5DC8C418198656DA00BF5816 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -666,7 +666,7 @@
 		5DC8C412198656DA00BF5816 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5DC8C411198656DA00BF5816 /* DrupalCon.app */,
+				5DC8C411198656DA00BF5816 /* fcp3.app */,
 				A63DF5C51BF5E5F400EC73EF /* HCE.app */,
 			);
 			name = Products;
@@ -1558,7 +1558,6 @@
 				5DC8C40D198656DA00BF5816 /* Sources */,
 				5DC8C40E198656DA00BF5816 /* Frameworks */,
 				5DC8C40F198656DA00BF5816 /* Resources */,
-				A6EBA9AC1B53CD8600C91E41 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1566,7 +1565,7 @@
 			);
 			name = DrupalCon;
 			productName = DrupalCon;
-			productReference = 5DC8C411198656DA00BF5816 /* DrupalCon.app */;
+			productReference = 5DC8C411198656DA00BF5816 /* fcp3.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A63DF5251BF5E5F400EC73EF /* HCE */ = {
@@ -1660,22 +1659,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A6EBA9AC1B53CD8600C91E41 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./DrupalCon/Vendor/Crashlytics/Fabric.framework/run e92185b02a2fa31062b797232c3d5cccf9867952 86aa1940d27f46c329fc363de870071c4117aaea9b473564fef59b1783a54c8d";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5DC8C40D198656DA00BF5816 /* Sources */ = {
@@ -2040,7 +2023,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/DrupalCon/Vendor/GoogleAnalytics",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = fcp3;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -2070,7 +2053,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/DrupalCon/Vendor/GoogleAnalytics",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = fcp3;
 				PROVISIONING_PROFILE = "2805ecd5-9371-4add-aa9a-7035cd810bfd";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

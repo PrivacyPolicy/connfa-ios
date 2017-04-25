@@ -25,17 +25,17 @@
 
 #ifdef HCE
 
-#define SERVER_URL  @"http://harvestcleanenergy.uat.link"
+#define SERVER_URL  @"52.207.139.3"
 #define BUNDLE_NAME @"HCE-Theme"
 
 
 #else
 
-#define SERVER_URL  @"http://drupalconbarcelona2015.uat.link"
+#define SERVER_URL  @"52.207.139.3"
 #define BUNDLE_NAME @"DC-Theme"
 
 #endif
-#define BASE_URL [NSString stringWithFormat:@"%@/api/v2/",SERVER_URL]
+#define BASE_URL [NSString stringWithFormat:@"http://%@/api/v2/fcp3-conference/",SERVER_URL]
 
 
 @interface DCAppConfiguration : NSObject

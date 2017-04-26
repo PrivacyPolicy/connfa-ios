@@ -15,7 +15,7 @@
 	<key>FavoriteEventColour</key>
 	<string>#1c7300</string>
 	<key>IsFilterEnable</key>
-	<true/>
+	<false/>
 	<key>SpeakerDetailBarColour</key>
 	<string>#405c7a</string>
 </dict>

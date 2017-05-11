@@ -164,7 +164,6 @@
 		A63DF5BC1BF5E5F400EC73EF /* DrupalCon-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C5F2201BF4E9C60093AD65 /* DrupalCon-Info.plist */; };
 		A63DF5BD1BF5E5F400EC73EF /* DCEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C5F1FC1BF4E9C60093AD65 /* DCEventCell.xib */; };
 		A63DF5C01BF5E5F400EC73EF /* about_img.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C5F21C1BF4E9C60093AD65 /* about_img.png */; };
-		A63DF5C81BF5E64400EC73EF /* HCE-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A63DF5C71BF5E64400EC73EF /* HCE-Info.plist */; };
 		A63DF5CB1BF5E75900EC73EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C5F2151BF4E9C60093AD65 /* Images.xcassets */; };
 		A63DF5CC1BF5E75900EC73EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C5F2151BF4E9C60093AD65 /* Images.xcassets */; };
 		A63DF5D01BF5F53E00EC73EF /* DC-Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63DF5CE1BF5F53E00EC73EF /* DC-Images.xcassets */; };
@@ -288,7 +287,6 @@
 		A6C5F3451BF4E9C60093AD65 /* about_img.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C5F21C1BF4E9C60093AD65 /* about_img.png */; };
 		A6C5F3471BF4E9C60093AD65 /* event_detail_style.css in Resources */ = {isa = PBXBuildFile; fileRef = A6C5F21D1BF4E9C60093AD65 /* event_detail_style.css */; };
 		A6C5F3491BF4E9C60093AD65 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A6C5F21E1BF4E9C60093AD65 /* style.css */; };
-		A6C5F34B1BF4E9C60093AD65 /* DrupalCon-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C5F2201BF4E9C60093AD65 /* DrupalCon-Info.plist */; };
 		A6C5F34F1BF4E9C60093AD65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5F2231BF4E9C60093AD65 /* main.m */; };
 		A6C5F3511BF4E9C60093AD65 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C5F2261BF4E9C60093AD65 /* Crashlytics.framework */; };
 		A6C5F3531BF4E9C60093AD65 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C5F2271BF4E9C60093AD65 /* Fabric.framework */; };
@@ -1592,10 +1590,16 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DC;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Lemberg Solution";
+				TargetAttributes = {
+					5DC8C410198656DA00BF5816 = {
+						DevelopmentTeam = ZDYRQ8Y67G;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
-			buildConfigurationList = 5DC8C40C198656DA00BF5816 /* Build configuration list for PBXProject "DrupalCon" */;
+			buildConfigurationList = 5DC8C40C198656DA00BF5816 /* Build configuration list for PBXProject "FCP3" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1628,7 +1632,6 @@
 				A6C5F3491BF4E9C60093AD65 /* style.css in Resources */,
 				A6C5F33D1BF4E9C60093AD65 /* Events.storyboard in Resources */,
 				A63DF5CB1BF5E75900EC73EF /* Images.xcassets in Resources */,
-				A6C5F34B1BF4E9C60093AD65 /* DrupalCon-Info.plist in Resources */,
 				A63DF5D01BF5F53E00EC73EF /* DC-Images.xcassets in Resources */,
 				A6C5F3211BF4E9C60093AD65 /* DCEventCell.xib in Resources */,
 				A63DF5D11BF5F53E00EC73EF /* DC-Theme.bundle in Resources */,
@@ -1653,7 +1656,6 @@
 				A63DF5BB1BF5E5F400EC73EF /* Events.storyboard in Resources */,
 				A63DF5BC1BF5E5F400EC73EF /* DrupalCon-Info.plist in Resources */,
 				A63DF5BD1BF5E5F400EC73EF /* DCEventCell.xib in Resources */,
-				A63DF5C81BF5E64400EC73EF /* HCE-Info.plist in Resources */,
 				A63DF5C01BF5E5F400EC73EF /* about_img.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1941,13 +1943,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
@@ -1959,7 +1967,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -1978,13 +1986,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
@@ -1994,7 +2007,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2006,7 +2019,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Lemberg Solutions Limited (J7LBYY3B34)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lemberg Solutions Limited (J7LBYY3B34)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZDYRQ8Y67G;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2017,12 +2031,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "DrupalCon/SupportingFiles/DrupalCon-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/DrupalCon/SupportingFiles/DrupalCon-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/DrupalCon/Vendor/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcp3.conference.2017;
 				PRODUCT_NAME = FCP3;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2036,7 +2051,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Lemberg Solutions Limited (J7LBYY3B34)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lemberg Solutions Limited (J7LBYY3B34)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZDYRQ8Y67G;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2047,14 +2063,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "DrupalCon/SupportingFiles/DrupalCon-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/DrupalCon/SupportingFiles/DrupalCon-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/DrupalCon/Vendor/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcp3.conference.2017;
 				PRODUCT_NAME = FCP3;
-				PROVISIONING_PROFILE = "2805ecd5-9371-4add-aa9a-7035cd810bfd";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -2080,12 +2097,13 @@
 					"Debug=1",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/DrupalCon/SupportingFiles/HCE-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/DrupalCon/Vendor/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.harvestcleanenergy.hce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c53e98f1-df4a-421b-ad42-f74bad957adc";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2110,12 +2128,13 @@
 				GCC_PREFIX_HEADER = "DrupalCon/SupportingFiles/DrupalCon-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "HCE=1";
 				INFOPLIST_FILE = "$(SRCROOT)/DrupalCon/SupportingFiles/HCE-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/DrupalCon/Vendor/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.harvestcleanenergy.hce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c53e98f1-df4a-421b-ad42-f74bad957adc";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2126,7 +2145,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5DC8C40C198656DA00BF5816 /* Build configuration list for PBXProject "DrupalCon" */ = {
+		5DC8C40C198656DA00BF5816 /* Build configuration list for PBXProject "FCP3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5DC8C441198656DB00BF5816 /* Debug */,
